@@ -1,0 +1,111 @@
+<html>
+<style>
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   color: white;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   background-color: white;
+   color: black;
+}
+
+#logo {
+   height: 50px;
+   width: 50px;
+   background-color: #4caf50;
+}
+
+#search-bar {
+   display: flex;
+   align-items: center;
+   background-color: #eee;
+   padding: 10px;
+}
+
+#search-bar input {
+   margin-right: 10px;
+}
+
+#search-bar button {
+   background-color: #4caf50;
+   color: white;
+   border: none;
+   padding: 10px;
+}
+
+#featured {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   background-color: #212121;
+   padding: 20px;
+}
+
+#featured h2 {
+   margin-bottom: 10px;
+}
+
+#featured p {
+   margin-bottom: 20px;
+}
+
+#featured video {
+   margin-bottom: 10px;
+}
+
+#featured button {
+   margin-bottom: 10px;
+}
+</style>
+<body>
+   <header>
+       <div id="logo">
+           <div id="logo-image"></div>
+           <div id="logo-text">
+               <h1>Movies Anytime</h1>
+               <p>Watch anytime, anywhere</p>
+           </div>
+       </div>
+       <div id="search-bar">
+           <input type="text" placeholder="Search for movies">
+           <button>Go</button>
+       </div>
+   </header>
+   <section id="featured">
+       <h2>Featured</h2>
+       <div id="featured-content">
+           <h3>Movie Title</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a hendrerit eleifend, arcu augue viverra enatis.</p>
+           <video controls>
+               <source src="movie.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+           </video>
+           <button>Watch Now</button>
+       </div>
+       <div id="featured-content">
+           <h3>TV Show</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a hendrerit eleifend, arcu augue viverra enatis.</p>
+           <video controls>
+               <source src="show.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+           </video>
+           <button>Watch Now</button>
+       </div>
+   </section>
+</body>
+</html>
